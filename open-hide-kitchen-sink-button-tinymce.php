@@ -6,7 +6,7 @@ if ( ! function_exists( 'kitchen_sink_set_metadata' ) ) {
 
   /*  Compatible Versions of PHP and WordPress */
   add_action( 'init', 'kitchen_sink_set_metadata' ); 
-  // it had originally 'plugins_loaded' because this functions were in a plugin
+  // it was originally hooked by 'plugins_loaded' because this functions were in a plugin
   // https://wordpress.org/plugins/jonradio-display-kitchen-sink/
 
   function kitchen_sink_set_metadata() {
