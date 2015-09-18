@@ -1,8 +1,8 @@
 <?php
 
-if ( ! function_exists( 'kitchen_sink_set_metadata' ) ) {
+// OPEN AND/OR HIDE KITCHEN SINK BUTTON IN TINYMCE
 
-  // OPEN AND/OR HIDE KITCHEN SINK BUTTON IN TINYMCE
+if ( ! function_exists( 'kitchen_sink_set_metadata' ) ) {
 
   /*  Compatible Versions of PHP and WordPress */
   add_action( 'init', 'kitchen_sink_set_metadata' ); 
