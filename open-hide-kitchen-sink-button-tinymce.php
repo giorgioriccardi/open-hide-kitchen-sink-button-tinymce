@@ -9,7 +9,7 @@ if ( ! function_exists( 'kitchen_sink_set_metadata' ) ) {
 
   function kitchen_sink_set_metadata() {
 
-    /*  Force Kitchen Sink to be displayed for the current User on the current Site. */  
+    /*  Force Kitchen Sink Button to be displayed for the current User. */  
     if ( 0 !== ( $user_id = get_current_user_id() ) ) {
       
       $settings_default = 'editor=tinymce&hidetb=1';
@@ -45,7 +45,7 @@ if ( ! function_exists( 'kitchen_sink_set_metadata' ) ) {
   // THIS IS OPTIONAL
   // REMOVE THE KITCHEN SINK BUTTON IN THE TINYMCE EDITOR BAR
 
-  add_filter( 'tiny_mce_before_init', 'kitchen_sink_remove_icon' );   // comment out this line if you want to keep the activation button
+  add_filter( 'tiny_mce_before_init', 'kitchen_sink_remove_icon' );   // comment out this line if you want to keep the activation button visible
    
   function kitchen_sink_remove_icon( $args ) {
     
